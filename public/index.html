@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel='stylesheet' href='simple.css' />
 </head>
 <body>
 
 <h1>Expense Tracker</h1>
 
-<form>
+<form action="/api/submit-expense" id="expenseForm" method="POST">
 
     <!-- Expense Date -->
     <label for="date">Date:</label>
@@ -66,9 +67,39 @@
     <br><br>
 
     <!-- Submit Button -->
-    <button type="submit">Add Expense</button>
+    <button type="submit" id="expenseSubmitButton">Add Expense</button>
 
 </form>
+
+<script>
+    const form = document.getElementById('expenseForm');
+
+    form.addEventListener('submit', async function(event) {
+        console.log("start");
+        event.preventDefault();
+
+        const json = {
+            expenseDate: document.getElementById('date').value,
+            expenseName: document.getElementById('expense').value,
+            expenseAmount: document.getElementById('amount').value,
+            expenseCategory: document.getElementById('category').value,
+            expenseDescription: document.getElementById('description').value
+        };
+
+        console.log(json);
+
+        const response = await fetch('/api/submit-expense', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(json)
+        });
+
+        const result = await response.json();
+        console.log(result);
+    });
+</script>
 
 </body>
 </html>
