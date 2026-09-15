@@ -114,6 +114,15 @@ short project about keeping track of expenses
 
 ## Technical Achievements
 - **Tech Achievement 1**: I used OAuth authentication via the password and username lookup in mongodb
+- 100% on all lighthouse tests in google
 
 ### Design/Evaluation Achievements
-- **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative...
+- **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative
+  - Keep content clear and concise
+    - Everything is extremely consise and clear with nothing except the bare essentials and extremely easy to understand buttons that function the way you expect
+  - Provide clear instructions
+    - 
+- CONTRAST: I made the color of the login fields a different contrasting section and highlighted all of the button with different colors that contrasts with the plain
+- color of the rest of the page with both of the login buttons being yellow-orange to contrast with the white borders and black background in dark mode.
+- In light mode however the color changes to white background and blue bottons to contrast.
+- I also made the entire page extremely plain to contrast the text that is in the form and login page and lead the eyes there
