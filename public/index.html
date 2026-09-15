@@ -26,7 +26,7 @@
 <main>
     <div class="expenses">
         <form action="/api/submit-expense" id="expenseForm" method="POST">
-
+            <h3>Expense Form</h3>
             <!-- Expense Date -->
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" required>
@@ -85,10 +85,12 @@
             <button type="submit" id="expenseSubmitButton">Add Expense</button>
 
         </form>
+        <div>
+            <h3>Expense List</h3>
+            <ul id="expenseList" class="expenseList">
 
-        <ul id="expenseList" class="expenseList">
-
-        </ul>
+            </ul>
+        </div>
     </div>
 </main>
 
