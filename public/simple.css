@@ -792,8 +792,29 @@ div.notice p:last-of-type {
 .expenses {
     display: flex;
     flex-direction: row;
+
+    ul {
+        list-style: none;
+    }
 }
 
-.expenseList{
-    text-decoration: none;
+.expense-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        border: var(--border-width) solid var(--border);
+        display: inline;
+    }
+}
+
+.expense-li {
+    width: 100px;
+}
+
+.expense-desc {
+    display: inline;
 }

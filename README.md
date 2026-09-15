@@ -92,9 +92,13 @@ Write a paragraph of at least 125 words *for each of the four principles* (four 
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-## Your Web Application Title
+## Simple Expense Tracker
 
-A link to your project running on render.
+account for grader:
+user: grader
+pass: pass123
+
+[A link to your project running on render.](https://a3-wen-chen.onrender.com)
 
 Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
 
@@ -105,7 +109,7 @@ Include a very brief summary of your project here. Images are encouraged, along 
   - include any modifications to the CSS framework you made via custom CSS you authored
 
 ## Technical Achievements
-- **Tech Achievement 1**: I used OAuth authentication via the GitHub strategy
+- **Tech Achievement 1**: I used OAuth authentication via the password and username lookup in mongodb
 
 ### Design/Evaluation Achievements
 - **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative...

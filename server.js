@@ -29,7 +29,7 @@ const ConnectDB = async () => {
     }
 }
 
-ConnectDB();
+await ConnectDB();
 const db  = client.db("4432COLLECTION");
 
 // Serve files from the public folder

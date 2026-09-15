@@ -159,7 +159,7 @@
             expenseList.replaceChildren();
             for (let i = 0; i < result.length; i++) {
                 const li1 = document.createElement("li");
-                li1.textContent = result[i].expenseAmount;
+                li1.textContent = "$ "+result[i].expenseAmount;
                 const li2 = document.createElement("li");
                 li2.textContent = result[i].expenseName;
                 const li3 = document.createElement("li");
@@ -170,13 +170,13 @@
                 li5.textContent = result[i].expenseDescription;
                 const ul = document.createElement("ul");
 
-                li1.addClass("expense-li");
-                li2.addClass("expense-li");
-                li3.addClass("expense-li");
-                li4.addClass("expense-li");
-                li5.addClass("expense-li");
+                li1.classList.add("expense-li");
+                li2.classList.add("expense-li");
+                li3.classList.add("expense-li");
+                li4.classList.add("expense-li");
+                li5.classList.add("expense-desc");
 
-                ul.addCLass("expense-ul")
+                ul.classList.add("expense-ul")
 
                 ul.appendChild(li1);
                 ul.appendChild(li2);
@@ -240,13 +240,13 @@
             li5.textContent = result[i].expenseDescription;
             const ul = document.createElement("ul");
 
-            li1.addClass("expense-li");
-            li2.addClass("expense-li");
-            li3.addClass("expense-li");
-            li4.addClass("expense-li");
-            li5.addClass("expense-li");
+            li1.classList.add("expense-li");
+            li2.classList.add("expense-li");
+            li3.classList.add("expense-li");
+            li4.classList.add("expense-li");
+            li5.classList.add("expense-desc");
 
-            ul.addCLass("expense-ul")
+            ul.classList.add("expense-ul")
 
             ul.appendChild(li1);
             ul.appendChild(li2);
