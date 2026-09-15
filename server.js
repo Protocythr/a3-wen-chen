@@ -3,7 +3,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { MongoClient, ObjectId } from 'mongodb';
 import dotenv from 'dotenv';
-//import cookieParser from 'cookie-parser';
 import passport from "passport";
 import bcrypt from 'bcrypt'
 import { Strategy as LocalStrategy } from "passport-local";
