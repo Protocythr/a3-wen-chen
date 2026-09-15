@@ -793,3 +793,7 @@ div.notice p:last-of-type {
     display: flex;
     flex-direction: row;
 }
+
+.expenseList{
+    text-decoration: none;
+}
