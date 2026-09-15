@@ -777,3 +777,19 @@ div.notice p:last-of-type {
         white-space: pre-wrap;
     }
 }
+
+.login-credentials {
+    position: absolute;
+    background-color: var(--bg);
+    padding-top: var(--standard-border-radius);
+    padding-bottom: var(--standard-border-radius);
+    border: 1px solid var(--border);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.expenses {
+    display: flex;
+    flex-direction: row;
+}
