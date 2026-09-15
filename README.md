@@ -98,15 +98,19 @@ account for grader:
 user: grader
 pass: pass123
 
-[A link to your project running on render.](https://a3-wen-chen.onrender.com)
+A link to your project running on render.
+https://a3-wen-chen.onrender.com/
 
-Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
+short project about keeping track of expenses
 
 - the goal of the application
+  - keeps track of all of you expenses
 - challenges you faced in realizing the application
+  - building a new app because my previous project was unfinished
 - what authentication strategy you chose to use and why (choosing one because it seemed the easiest to implement is perfectly acceptable)
+  - I choose to do oauth through passport and using hash comparison from bcrypt and then storing hash and user on mongodb because github auth needed an application and had not time to implement
 - what CSS framework you used and why
-  - include any modifications to the CSS framework you made via custom CSS you authored
+  - I used simplecss because it was the easiest for the time
 
 ## Technical Achievements
 - **Tech Achievement 1**: I used OAuth authentication via the password and username lookup in mongodb
